@@ -1,7 +1,9 @@
 # Flutter Chopper
 
-Chopper is used for HTTP requests in FLutter.
+Chopper is used for HTTP requests in Flutter.
+
 Chopper is the equivalent of Android's RetroFit.
+
 Chopper is at a higher level than HTTP and DIO.
 
 ## Tutorials
@@ -130,6 +132,10 @@ environment:
 ```
 
 - https://www.youtube.com/watch?v=w6WqqFGP_Ck
+
+### Other Errors
+
+- `dependOnInheritedElement() was called before initstate()`: https://stackoverflow.com/questions/60363665/dependoninheritedelement-was-called-before-initstate-in-flutter
 
 ---
 
