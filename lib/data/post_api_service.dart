@@ -7,7 +7,10 @@ part 'post_api_service.chopper.dart';
 @ChopperApi(baseUrl: '/posts')
 abstract class PostApiService extends ChopperService {
   @Get()
-  Future<Response> getPosts();
+  Future<Response> getPosts([
+    // Parameter headers are suitable for ones which values need to change
+    @Header('Authorization') String token,
+  ]);
 
   @Get(path: '/{id}')
   // Query parameters are specified the same way as @Path

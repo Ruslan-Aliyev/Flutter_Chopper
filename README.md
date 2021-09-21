@@ -15,18 +15,30 @@ Chopper is at a higher level than HTTP and DIO.
 
 On top of Chopper, some other stuff are alos used in this tutorial, which is better to have basic knowledge of.
 
-### InheritedWidget
+### `InheritedWidget`
 
 For easy passage of data from ancestor class to distant-descendant classes.
 
 - https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html
 
-### Provider
+### `Provider`
 
 A wrapper around `InheritedWidget` to make them easier to use.
 
 - https://pub.dev/packages/provider
 - https://www.youtube.com/watch?v=K2ampPUTfIQ
+
+### `FutureBuilder` vs `Future`
+
+Flutter’s Dart uses Future Objects to present the results of Asynchronous operations. With Dart’s Future, developers can manage IO without worrying about deadlocks.
+
+FutureBuilder is a widget by Flutter which lets you easily determine the current state of the Future and choose what to show during that state.
+
+- https://walkingtree.tech/futurebuilder-flutter-widget/
+
+### Auth
+
+- https://resocoder.com/2019/06/19/chopper-retrofit-for-flutter-basics/#t-1632229847628
 
 ## Potential problems
 

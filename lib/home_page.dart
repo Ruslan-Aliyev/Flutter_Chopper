@@ -20,7 +20,12 @@ class _HomeState extends State<Home> {
   }
 
   Future<List<model.Post>> fetchAlbums() async {
-    final response = await Provider.of<PostApiService>(context, listen: false).getPosts();
+
+    //final auth = whatever auth request
+    //get your_api_token_here out of auth
+    String token = 'Bearer ' + 'your_api_token_here';
+
+    final response = await Provider.of<PostApiService>(context, listen: false).getPosts(token);
     //print(response.body);
 
     if (response.statusCode == 200) {

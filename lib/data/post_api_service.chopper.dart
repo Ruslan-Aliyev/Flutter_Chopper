@@ -14,9 +14,10 @@ class _$PostApiService extends PostApiService {
 
   final definitionType = PostApiService;
 
-  Future<Response> getPosts() {
+  Future<Response> getPosts([String token]) {
     final $url = '/posts';
-    final $request = Request('GET', $url, client.baseUrl);
+    final $headers = {'Authorization': token};
+    final $request = Request('GET', $url, client.baseUrl, headers: $headers);
     return client.send<dynamic, dynamic>($request);
   }
 
